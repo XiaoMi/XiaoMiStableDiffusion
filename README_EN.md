@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](LICENSE)
 
-You can try to runn the Stable Diffusion model using the following on device deployment framework.
+You can try our text2image model using the provided on device deployment framework.
 
 <img src="assets/dog.jpg" alt="drawing" width="200"/> <img src="assets/universe.jpg" alt="drawing" width="200"/> <img src="assets/girl.jpg" alt="drawing" width="200"/>
 
@@ -79,7 +79,7 @@ Notes:
 ## Model Quantization
 
 
-XiaoMi SD adopts Post-Training Quantization (PTQ) to convert the Float32 model into an INT8 quantized model. PTQ process reduces the model size to approximately $/frac{1}{4}$ of its original size, making the model size about 1.1GB.
+XiaoMi SD adopts Post-Training Quantization (PTQ) to convert the Float32 model into an INT8 quantized model. PTQ process reduces the model size to approximately $`\frac{1}{4}`$ of its original size, making the model size about 1.1GB.
 The model is quantized by collecting high-quality calibration data and optimizing quantization methods: 
 * Calibration Data Collection: Collect high-quality prompt datasets from various domains as calibration datasets. 
 * Quantization Calibration Method: Use the AdaRound quantization algorithm and high-precision per-channel quantization methods to pick the optimal 8-bit fixed-point values for floating-point weight parameters. 
